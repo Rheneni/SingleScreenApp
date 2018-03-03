@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/HelloAndroidLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="64dp"
+    android:background="#f1c775"
+    tools:context="com.example.lenovo.helloandroid.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/imageLinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/udacityImageView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal|end"
+            android:background="@android:color/transparent"
+            android:src="@drawable/udacity"/>
+
+
+        <ImageView
+            android:id="@+id/teachLearnImageView"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal|end"
+            android:background="@android:color/transparent"
+            android:src="@drawable/teach_learn"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageLinearLayout"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/businessNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLinearLayout"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="#02b2e3"
+        android:fontFamily="monospace"
+        android:text="Udacity" />
+
+    <TextView
+        android:id="@+id/address1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/businessNameTextView"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textColor="#063643"
+        android:textSize="20sp"
+        android:text="2465 Latham St" />
+
+    <TextView
+        android:id="@+id/address2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address1TextView"
+        android:layout_marginBottom="8dp"
+        android:textColor="#063643"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:text="Mountain View, CA 94043" />
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address2TextView"
+        android:textColor="#063643"
+        android:textSize="16sp"
+        android:fontFamily="monospace"
+        android:text="650-555-5555" />
+
+    <TextView
+        android:id="@+id/websiteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumberTextView"
+        android:textSize="14sp"
+        android:textColor="#231111"
+        android:fontFamily="monospace"
+        android:text="www.udacity.com" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/websiteTextView"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:textColor="#279c06"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Learning and Teaching Online Together" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Join us!"/>
+
+</RelativeLayout>
